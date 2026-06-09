@@ -43,12 +43,17 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
 .card__image img{width:100%;max-width:340px;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,0.15)}
 .hidden{display:none}
 
-@media (max-width:720px) {
+@media (max-width: 720px) {
+
   body{
     padding:0;
+    background:#fff;
+    display:block;
+    min-height:auto;
   }
 
   .page{
+    width:100%;
     max-width:100%;
     padding:0;
   }
@@ -56,28 +61,28 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   .card{
     width:100%;
     max-width:100%;
-    padding:0;
-    border-radius:0;
-    grid-template-columns:1fr;
-    gap:0;
-    overflow:hidden;
     min-height:100vh;
+    border-radius:0;
+    padding:0;
+    display:flex;
+    flex-direction:column-reverse;
+    gap:0;
+    box-shadow:none;
   }
 
   .card__image{
-    order:-1;
+    width:100%;
   }
 
   .card__image img{
     width:100%;
-    max-width:100%;
     display:block;
-    border-radius:0;
-    box-shadow:none;
+    border-radius:0 0 16px 16px;
+    max-width:none;
   }
 
   .card__content{
-    padding:32px 24px;
+    padding:40px 24px;
   }
 
   .card__content h1{
@@ -87,9 +92,7 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
 
   .card__text{
     font-size:16px;
-    line-height:1.6;
     margin-bottom:24px;
-    max-width:none;
   }
 
   .features{
@@ -98,13 +101,7 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
 
   .features li{
     font-size:16px;
-    gap:12px;
-  }
-
-  .field-row{
-    flex-direction:row;
-    align-items:center;
-    gap:12px;
+    margin-bottom:16px;
   }
 
   input[type="email"]{
@@ -117,34 +114,40 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
     font-size:16px;
   }
 
+  /* SUCCESS PAGE */
+
   .card--success{
     min-height:100vh;
-    justify-content:space-between;
-    align-items:flex-start;
-    text-align:left;
-    padding:32px 24px;
     border-radius:0;
+    padding:40px 24px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    text-align:left;
+    box-shadow:none;
   }
 
   .card--success .success-icon{
     width:64px;
-    margin-top:80px;
+    margin-bottom:32px;
   }
 
   .card--success h1{
-    font-size:42px;
+    font-size:48px;
     line-height:1;
-    margin:32px 0 24px;
+    margin-bottom:24px;
   }
 
   .card--success .success-copy{
+    max-width:100%;
     font-size:16px;
-    max-width:none;
     margin-bottom:auto;
   }
 
   .card--success .cta{
     width:100%;
     max-width:none;
+    margin-top:40px;
   }
 }
