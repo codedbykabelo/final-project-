@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stay Updated | Newsletter Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="newsletter-card">
+        <header class="newsletter-header">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on UX, product design, and strategy.</p>
+        </header>
+
+        <form id="signup-form" class="newsletter-form" novalidate>
+          <label for="email-input">Email address</label>
+          <input id="email-input" name="email" type="email" placeholder="email@company.com" required />
+          <span id="email-error" class="error-message" aria-live="polite"></span>
+
+          <button type="submit" class="submit-button">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
