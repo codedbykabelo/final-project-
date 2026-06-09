@@ -116,7 +116,7 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
     font-size:16px;
   }
 
-  /* SUCCESS PAGE */
+ 
 
   .card--success{
   min-height:100vh;
@@ -127,6 +127,8 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   align-items:flex-start;
   text-align:left;
   box-shadow:none;
+
+  justify-content:space-between;
 }
 
   .card--success .success-icon{
@@ -135,7 +137,7 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   }
 
   .card--success h1{
-    font-size:48px;
+    font-size:40px;
     line-height:1;
     margin-bottom:24px;
   }
@@ -143,12 +145,12 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   .card--success .success-copy{
     max-width:100%;
     font-size:16px;
-    margin-bottom:auto;
+    
   }
 
   .card--success .cta{
   width:100%;
   max-width:none;
-  margin-top:auto;
+  
 }
 }
