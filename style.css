@@ -119,16 +119,15 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   /* SUCCESS PAGE */
 
   .card--success{
-    min-height:100vh;
-    border-radius:0;
-    padding:40px 24px;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:flex-start;
-    text-align:left;
-    box-shadow:none;
-  }
+  min-height:100vh;
+  border-radius:0;
+  padding:40px 24px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align:left;
+  box-shadow:none;
+}
 
   .card--success .success-icon{
     width:64px;
@@ -148,8 +147,8 @@ button.cta:hover{background:linear-gradient(135deg, hsl(343, 100%, 55%) 0%, hsl(
   }
 
   .card--success .cta{
-    width:100%;
-    max-width:none;
-    margin-top:40px;
-  }
+  width:100%;
+  max-width:none;
+  margin-top:auto;
+}
 }
